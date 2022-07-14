@@ -10,7 +10,13 @@ export default function App() {
   };
 
   const decrease = () => {
-    setCount((count) => count - 1);
+    if (count <1) 
+    {setCount(0)
+      
+    } else {
+      
+      setCount((count) => count - 1);
+    }
   };
 
   const reset = () => {
